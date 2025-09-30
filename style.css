@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #1e1e1e;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #ffcc00;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  margin-left: 5px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #e6b800;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  overflow-x: hidden;
+  gap: 15px;
+  padding: 20px;
+}
+
+.carousel-item {
+  min-width: 200px;
+  flex-shrink: 0;
+  transition: transform 0.5s;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Popular movies 3x4 grid */
+#popularMovies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(3, auto);  /* 3 rows */
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for popular movies */
+@media (max-width: 900px) {
+  #popularMovies {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(6, auto);  /* 6 rows */
+  }
+}
+
+@media (max-width: 500px) {
+  #popularMovies {
+    grid-template-columns: 1fr;           /* 1 column */
+    grid-template-rows: repeat(12, auto); /* 12 rows */
+  }
+}
+
+/* Search results grid */
+#searchResults {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Sections spacing */
+section {
+  margin-bottom: 40px;
+}
+
+#searchSection h2 {
+  color: #ffcc00;
+  margin-left: 20px;
+}
+
+.movie-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin: 10px 0 5px;
+}
+
+.movie-card p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 0 5px 10px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 90%;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+#saveReviewBtn {
+  padding: 10px 20px;
+  background: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#saveReviewBtn:hover {
+  background: #e6b800;
+}
+
+/* Star rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.star {
+  cursor: pointer;
+  color: #555;
+}
+
+.star.selected,
+.star:hover,
+.star:hover ~ .star {
+  color: #ffcc00;
+}

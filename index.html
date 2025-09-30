@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineRadar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <header>
+  <h1>🎬 CineRadar</h1>
+  <p>Discover, Rate, and Review Movies Instantly</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for a movie...">
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Latest carousel -->
+    <section id="carouselSection">
+      <h2>Latest Releases</h2>
+      <div id="carousel" class="carousel"></div>
+    </section>
+
+    <!-- Popular movies -->
+    <section id="popularMoviesSection">
+      <h2>Popular Movies</h2>
+      <div id="popularMovies" class="movie-grid"></div>
+    </section>
+
+    <!-- Search results -->
+    <section id="searchSection">
+      <h2>Search Results</h2>
+      <div id="searchResults" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <!-- Review Modal -->
+  <div id="reviewModal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn">&times;</span>
+      <h2 id="modalMovieTitle"></h2>
+      <p id="modalMoviePlot"></p>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+      <textarea id="reviewInput" placeholder="Write your review..."></textarea>
+      <button id="saveReviewBtn">Save Review</button>
+      <div id="savedReviews"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
