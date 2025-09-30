@@ -34,8 +34,8 @@ You can view the live project on GitHub Pages:
 ```bash
 git clone https://github.com/YOUR_USERNAME/CineRadar.git
 ```
-2.Navigate into the project folder:
+2. Navigate into the project folder:
 ```
 cd CineRadar
 ```
-3.Open index.html in a browser to run locally.
+3. Open index.html in a browser to run locally.
