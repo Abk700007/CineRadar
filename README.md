@@ -19,7 +19,7 @@ CineRadar is an interactive movie discovery, rating, and review platform. Users 
 ## Demo
 
 You can view the live project on GitHub Pages:  
-[Your GitHub Pages Link]
+[https://github.com/Abk700007/CineRadar/deployments/github-pages]
 
 ---
 
