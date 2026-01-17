@@ -1,4 +1,4 @@
-const API_KEY = "87eb6a12";
+const API_KEY = "";
 
 // Elements
 const carousel = document.getElementById("carousel");
